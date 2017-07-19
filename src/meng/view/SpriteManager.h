@@ -30,10 +30,8 @@ namespace MEng {
 
             sf::Texture& getTexture(std::string name) {
                 if (spriteCache.find(name) == spriteCache.end()) {
-                    std::ostringstream ss;
-                    std::cerr.rdbuf(ss.rdbuf());
                     if (!spriteCache[name].loadFromFile(directory + name)) {
-                        BOOST_LOG_TRIVIAL(error) << ss.str();
+                        BOOST_LOG_TRIVIAL(error) << "Can not load file '" << directory << name << "'";
                     }
                 }
                 auto& item = spriteCache[name];
