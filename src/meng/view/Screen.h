@@ -39,6 +39,8 @@ namespace MEng {
             int getHeight() { return height; }
 
             sf::Vector2f getSize() { return {static_cast<float>(width), static_cast<float>(height)}; }
+
+            void close();
         };
     }
 }

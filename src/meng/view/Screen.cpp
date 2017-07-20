@@ -25,3 +25,7 @@ void Screen::draw() {
     }
     window.display();
 }
+
+void Screen::close() {
+    window.close();
+}
