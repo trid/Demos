@@ -9,4 +9,4 @@ file(GLOB SOURCE_FILES *.cpp)
 file(GLOB VIEW_SOURCE_FILES view/*.cpp)
 file(GLOB GUI_SOURCE_FILES view/GUI/*.cpp)
 
-add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES} ${VIEW_SOURCE_FILES} ${GUI_SOURCE_FILES} ../arena/main.cpp ../arena/main.h)
+add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES} ${VIEW_SOURCE_FILES} ${GUI_SOURCE_FILES})
