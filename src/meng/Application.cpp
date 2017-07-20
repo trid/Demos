@@ -20,6 +20,12 @@ void Application::run() {
             state->run();
         }
     }
+
+    while (!states.empty()) {
+        states.pop_back();
+    }
+
+    Screen::getInstance().close();
 }
 
 void Application::pushState(StatePtr state) {
